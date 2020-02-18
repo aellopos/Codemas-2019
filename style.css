@@ -1,0 +1,75 @@
+canvas {
+    background-image: url("obrazky/background.png");
+    background-size: 100% 100%;
+}
+
+#game {
+    text-align: center;
+}
+
+body {
+    background-color: #0e234d;
+    color: #ffffff;
+    font-family: 'Press Start 2P', cursive;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    margin: 20px auto 10px auto;
+}
+
+header img {
+    margin-right: 10px;
+}
+
+#introduction,
+#dead-end,
+#end {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 600px;
+    background-image: url("obrazky/background.png");
+    background-size: 100% 100%;
+}
+
+#end {
+    background-image: url("obrazky/background_win.png");
+}
+
+.content {
+    width: 60%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+button {
+    margin-top: 30px;
+    padding: 20px 30px;
+    font-size: 20px;
+    line-height: 1;
+    border-radius: 60px;
+    border: 5px solid #ffc04b;
+    color: white;
+    background: linear-gradient(to bottom, #275786, #0e234d);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    outline: 0;
+    transition: all 0.2s;
+    font-family: 'Press Start 2P', cursive;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #3677af, #234f79);
+}
+
+button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+}

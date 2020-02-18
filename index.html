@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Moje vánoční hra</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap&subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="obrazky/present.png" alt="present">
+            <span id="presentScore">0/2</span>
+        </div>
+
+        <div>
+            <img src="obrazky/gingerbread.png" alt="gingerbread">
+            <span id="gingerbreadScore">0/2</span>
+        </div>
+
+        <div>
+            <img src="obrazky/heart.png" alt="heart">
+            <span id="lifeCount">3/3</span>
+        </div>
+
+        <div id="time">
+            00:00
+        </div>
+    </header>
+
+    <div id="introduction">
+        <div class="content">
+            <p>Tvým úkolem je co nejrychleji sesbírat perníčky a dárečky na mapě. Zároveň si musíš dávat pozor na zákeřné ledové bodliny.</p>
+
+            <p>Pohybovat se můžeš pomocí šipek.</p>
+
+            <button id="start">Start hry</button>
+        </div>
+    </div>
+
+    <div id="dead-end">
+        <div class="content">
+            <h2>Ajajaj!</h2>
+
+            <p>Tentokrát se to nepovedlo, umřel jsi...</p>
+
+            <p>Nevzdávej to a zkus to znovu!</p>
+
+            <button id="again">Hrát znovu</button>
+        </div>
+    </div>
+
+    <div id="end">
+        <div class="content">
+            <h2>Výborně!</h2>
+
+            <p>Podařilo se ti sesbírat všechny dárečky a perníčky!</p>
+
+            <p id="result"></p>
+
+            <p>Bude někdo lepší jak ty?</p>
+
+            <button id="again2">Hrát znovu</button>
+        </div>
+    </div>
+
+    <div id="game">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <audio id="music" src="sounds/music.mp3" preload="auto" loop></audio>
+    <audio id="collected" src="sounds/collected.mp3" preload="auto"></audio>
+    <audio id="life-down" src="sounds/life_down.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
